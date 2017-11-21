@@ -79,8 +79,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logger", function() { return Logger; });
-var Logger = __webpack_require__(1);
+const Logger = __webpack_require__(1);
+/* harmony export (immutable) */ __webpack_exports__["Logger"] = Logger;
+
 
 /***/ }),
 /* 1 */
@@ -91,8 +92,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["printInfo"] = printInfo;
 /* harmony export (immutable) */ __webpack_exports__["printSuccess"] = printSuccess;
 /* harmony export (immutable) */ __webpack_exports__["printError"] = printError;
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 /**
  * 日志工具
  * @author super2god
@@ -104,7 +103,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * @param {*参数} params
  */
 function printInfo(msg, params) {
-  console.log('%c [info] ' + msg + ' ', 'color: blue', params);
+  console.log(`%c [info] ${msg} `, 'color: blue', params);
 }
 
 /**
@@ -113,7 +112,7 @@ function printInfo(msg, params) {
  * @param {*数据} data
  */
 function printSuccess(msg, data) {
-  console.log('%c [success] ' + msg + ' ', 'color: green', data);
+  console.log(`%c [success] ${msg} `, 'color: green', data);
 }
 
 /**
@@ -121,10 +120,10 @@ function printSuccess(msg, data) {
  * @param {*错误信息} error
  */
 function printError(error) {
-  if ((typeof error === 'undefined' ? 'undefined' : _typeof(error)) === 'object') {
+  if (typeof error === 'object') {
     console.log('%c [error]', 'color: red', error);
   } else {
-    console.log('%c [error] ' + error, 'color: red');
+    console.log(`%c [error] ${error}`, 'color: red');
   }
 }
 
