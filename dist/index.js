@@ -75,14 +75,33 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["test"] = test;
-function test() {
-  console.log('test...');
+/**
+ * Webpack打包入口
+ */
+
+const printInfo = __webpack_require__(1);
+
+module.exports = {
+  sleep
+};
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+/**
+ * 睡眠
+ * @param {*毫秒} milliseconds
+ */
+function sleep(milliseconds) {
+  return new Promise(resolve => {
+    setTimeout(_ => resolve(), milliseconds);
+  });
 }
+
+module.exports = sleep;
 
 /***/ })
 /******/ ]);
