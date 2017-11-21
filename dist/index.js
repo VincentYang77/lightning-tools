@@ -81,7 +81,7 @@ return /******/ (function(modules) { // webpackBootstrap
  * Webpack打包入口
  */
 
-const printInfo = __webpack_require__(1);
+const sleep = __webpack_require__(1);
 
 module.exports = {
   sleep
