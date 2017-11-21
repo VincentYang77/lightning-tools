@@ -70,9 +70,9 @@ module.exports =
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-const Logger = __webpack_require__(1);
-/* harmony export (immutable) */ __webpack_exports__["Logger"] = Logger;
-
+/* harmony default export */ __webpack_exports__["default"] = ({
+  Logger: __webpack_require__(1)
+});
 
 /***/ }),
 /* 1 */

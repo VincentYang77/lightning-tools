@@ -1,1 +1,3 @@
-export const Logger = require('../modules/Logger')
+export default {
+  Logger: require('../modules/Logger')
+}
