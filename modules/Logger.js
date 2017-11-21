@@ -3,6 +3,8 @@
  * @author super2god
  */
 
+const canPrint = process.env.NODE_ENV === 'development'
+
 /**
  * 信息
  * @param {*信息} msg
