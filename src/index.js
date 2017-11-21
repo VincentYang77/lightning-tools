@@ -1,3 +1,3 @@
-export default {
-  Logger: require('../modules/Logger')
+export function test() {
+  console.log('test...')
 }

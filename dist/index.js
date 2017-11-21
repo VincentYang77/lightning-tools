@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["lightning-tools"] = factory();
+	else
+		root["lightning-tools"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -70,53 +79,11 @@ module.exports =
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony default export */ __webpack_exports__["default"] = ({
-  Logger: __webpack_require__(1)
-});
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["printInfo"] = printInfo;
-/* harmony export (immutable) */ __webpack_exports__["printSuccess"] = printSuccess;
-/* harmony export (immutable) */ __webpack_exports__["printError"] = printError;
-/**
- * 日志工具
- * @author super2god
- */
-
-/**
- * 信息
- * @param {*信息} msg
- * @param {*参数} params
- */
-function printInfo(msg, params) {
-  console.log(`%c [info] ${msg} `, 'color: blue', params);
-}
-
-/**
- * 成功
- * @param {*信息} msg
- * @param {*数据} data
- */
-function printSuccess(msg, data) {
-  console.log(`%c [success] ${msg} `, 'color: green', data);
-}
-
-/**
- * 错误
- * @param {*错误信息} error
- */
-function printError(error) {
-  if (typeof error === 'object') {
-    console.log('%c [error]', 'color: red', error);
-  } else {
-    console.log(`%c [error] ${error}`, 'color: red');
-  }
+/* harmony export (immutable) */ __webpack_exports__["test"] = test;
+function test() {
+  console.log('test...');
 }
 
 /***/ })
 /******/ ]);
+});
