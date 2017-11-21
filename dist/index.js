@@ -75,13 +75,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const Logger = __webpack_require__(1);
-/* harmony export (immutable) */ __webpack_exports__["Logger"] = Logger;
 
+module.exports = {
+  Logger
+};
+
+module.exports.default = module.exports;
 
 /***/ }),
 /* 1 */

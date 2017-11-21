@@ -1,1 +1,7 @@
-export const Logger = require('../modules/Logger')
+const Logger = require('../modules/Logger')
+
+module.exports = {
+  Logger
+}
+
+module.exports.default = module.exports;
