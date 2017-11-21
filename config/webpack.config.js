@@ -11,7 +11,7 @@ const config = {
         filename: 'index.js',
         path: path.resolve(rootPath, 'dist'),
         library: `${pkg.name}`,
-        libraryTarget: "umd"
+        libraryTarget: "commonjs2"
     },
     module: {
         rules: [{

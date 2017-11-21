@@ -1,14 +1,5 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["lightning-tools"] = factory();
-	else
-		root["lightning-tools"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -75,15 +66,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const Logger = __webpack_require__(1);
+/* harmony export (immutable) */ __webpack_exports__["Logger"] = Logger;
 
-module.exports = {
-  Logger
-};
-
-module.exports.default = module.exports;
 
 /***/ }),
 /* 1 */
@@ -131,4 +120,3 @@ function printError(error) {
 
 /***/ })
 /******/ ]);
-});
