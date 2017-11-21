@@ -3,15 +3,12 @@
  * @author super2god
  */
 
-const canPrint = process.env.NODE_ENV === 'development'
-
 /**
  * 信息
  * @param {*信息} msg
  * @param {*参数} params
  */
 export function printInfo (msg, params) {
-  if (!canPrint) return
   console.log(`%c [info] ${msg} `, 'color: blue', params)
 }
 
@@ -21,7 +18,6 @@ export function printInfo (msg, params) {
  * @param {*数据} data
  */
 export function printSuccess (msg, data) {
-  if (!canPrint) return
   console.log(`%c [success] ${msg} `, 'color: green', data)
 }
 
@@ -30,7 +26,6 @@ export function printSuccess (msg, data) {
  * @param {*错误信息} error
  */
 export function printError (error) {
-  if (!canPrint) return
   if (typeof error === 'object') {
     console.log('%c [error]', 'color: red', error)
   } else {
