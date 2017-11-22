@@ -2,8 +2,8 @@
  * Webpack打包入口
  */
 
-const sleep = require('./modules/time/sleep')
+const yuan2fen = require('./modules/unit/yuan2fen')
+const fen2yuan = require('./modules/unit/fen2yuan')
+const lodash = require('lodash')
 
-module.exports = {
-  sleep
-}
+module.exports = lodash.merge(lodash, { fen2yuan })
