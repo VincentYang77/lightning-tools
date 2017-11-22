@@ -1,4 +1,4 @@
-const _ = require('../../index')
+const _ = require('lodash')
 
 /**
  * 元 -> 分

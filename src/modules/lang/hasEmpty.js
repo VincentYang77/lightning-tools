@@ -1,4 +1,4 @@
-const _ = require('../../index')
+const _ = require('lodash')
 
 /**
  * 判断是否有空的成员
