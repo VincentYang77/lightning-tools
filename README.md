@@ -7,4 +7,5 @@
 </p>
 
 <h2 align="center">lightning-tools：雷电鸟</h2>
-<h5 align="center">高效的复用前端的业务工具和常用工具，以便提高前端的生产效率</h5>
+
+> :zap: 提高前端的生产率
