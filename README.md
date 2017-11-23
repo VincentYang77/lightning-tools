@@ -31,7 +31,7 @@ _.fen2yuan(2000)
 ```html
 <template>
   <div>
-    <span v-text="fen2yuan(2000) + '元'"></span>
+    <span v-text="fen2yuan(2000) + '元'"></span>
   </div>
 </template>
 
