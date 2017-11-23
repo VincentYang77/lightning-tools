@@ -12,7 +12,7 @@
 
 > :zap:Slogan: 提高前端的生产率
 
-<!-- <a href="http://super2god.coding.me/lightning-tools-wiki/#/README" target="_blank">:eyes:API文档<a> -->
+[:eyes:API文档](http://super2god.coding.me/lightning-tools-wiki/#/README)
 
 ### Quick start
 
