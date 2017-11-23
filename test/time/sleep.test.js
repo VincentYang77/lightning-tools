@@ -1,7 +1,6 @@
 const sleep = require('../../src/modules/time/sleep')
 const expect = require('chai').expect
 
-
 describe('睡眠', () => {
   it('缺少milliseconds', async () => {
     try {

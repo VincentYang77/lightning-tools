@@ -24798,11 +24798,12 @@ const unique = __webpack_require__(124);
 const hasEmpty = __webpack_require__(125);
 
 const sleep = __webpack_require__(126);
-const time2ymdhm = __webpack_require__(127);
-const time2ymdhms = __webpack_require__(129);
+const time2ymd = __webpack_require__(127);
+const time2ymdhm = __webpack_require__(129);
+const time2ymdhms = __webpack_require__(130);
 
-const yuan2fen = __webpack_require__(130);
-const fen2yuan = __webpack_require__(131);
+const yuan2fen = __webpack_require__(131);
+const fen2yuan = __webpack_require__(132);
 
 module.exports = lodash.merge(lodash, {
   compose,
@@ -24811,6 +24812,7 @@ module.exports = lodash.merge(lodash, {
   hasEmpty,
 
   sleep,
+  time2ymd,
   time2ymdhm,
   time2ymdhms,
 
@@ -24953,15 +24955,15 @@ module.exports = sleep;
 const moment = __webpack_require__(0);
 
 /**
- * 日期格式化为YYYY-MM-DD HH:mm
+ * 日期格式化为YYYY-MM-DD
  * @param  time       时间
  * @return {* String} 格式化后的时间
  */
-function getTime2Ymdhm(time = new Date()) {
-  return moment(time).format('YYYY-MM-DD HH:mm');
+function time2ymd(time = new Date()) {
+  return moment(time).format('YYYY-MM-DD');
 }
 
-module.exports = getTime2Ymdhm;
+module.exports = time2ymd;
 
 /***/ }),
 /* 128 */
@@ -25228,18 +25230,35 @@ webpackContext.id = 128;
 const moment = __webpack_require__(0);
 
 /**
+ * 日期格式化为YYYY-MM-DD HH:mm
+ * @param  time       时间
+ * @return {* String} 格式化后的时间
+ */
+function time2ymdhm(time = new Date()) {
+  return moment(time).format('YYYY-MM-DD HH:mm');
+}
+
+module.exports = time2ymdhm;
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const moment = __webpack_require__(0);
+
+/**
  * 日期格式化为YYYY-MM-DD HH:mm:ss
  * @param  time       时间
  * @return {* String} 格式化后的时间
  */
-function getTime2Ymdhms(time = new Date()) {
+function time2ymdhms(time = new Date()) {
   return moment(time).format('YYYY-MM-DD HH:mm:ss');
 }
 
-module.exports = getTime2Ymdhms;
+module.exports = time2ymdhms;
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const _ = __webpack_require__(1);
@@ -25260,7 +25279,7 @@ function convertYuan2Fen(price) {
 module.exports = convertYuan2Fen;
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const _ = __webpack_require__(1);
