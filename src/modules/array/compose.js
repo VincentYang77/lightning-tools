@@ -1,6 +1,6 @@
 /**
  * 把一个对象数组中某个属性相同的对象合并起来
- * @param   items         对象数组
+ * @param   items       对象数组
  * @param   compareAttr 用于比较是否相同的属性
  * @param   composeAttr 用于合并的属性
  * @returns {* Array}   合并后的数组

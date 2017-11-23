@@ -38,7 +38,7 @@ describe('把一个对象数组中某个属性相同的对象合并起来', () =
     }]
     expect(compose(users, 'id', 'age')).to.be.deep.equal(newUsers)
   })
-  it('users --> newUsers', () => {
+  it('teachers --> newTeachers', () => {
     const teachers = [{
       id: '001',
       name: 'hello'

@@ -9,9 +9,11 @@ function hasEmpty () {
     if (_.isArray(value)) {
       return value.length === 0
     } else if (_.isBoolean(value)) {
-      return true
+      return false
     } else if (_.isObject(value)) {
       return _.keys(value).length === 0
+    } else if (_.isNumber(value) && value === 0) {
+      return false
     }
     return !value
   })

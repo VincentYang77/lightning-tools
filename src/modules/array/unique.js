@@ -2,7 +2,7 @@ const _ = require('lodash')
 
 /**
  * 数组去重
- * @param  items      想要去重的数组
+ * @param  items      对象数组
  * @param  attr       去重条件，如果不传入则判断元素本身
  * @return {* Array}  去重后的数组
  */
