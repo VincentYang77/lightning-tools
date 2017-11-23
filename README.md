@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.npmjs.com/package/lightning-tools" target="_blank"><img width="100"src="http://outt0i9l8.bkt.clouddn.com/lightning.png"></a></p>
+<p align="center"><a href="https://www.npmjs.com/package/lightning-tools" target="_blank"><img width="100" src="http://outt0i9l8.bkt.clouddn.com/lightning.png"></a></p>
 
 <p align="center">
     <a href="https://www.npmjs.com/package/lightning-tools" target="_blank"><img src="https://img.shields.io/badge/version-1.1.4-blue.svg?style=flat" alt="Build Status"></a>
@@ -12,7 +12,7 @@
 
 > :zap:Slogan: 提高前端的生产率
 
-<a href="http://super2god.coding.me/lightning-tools-wiki/#/README" target="_blank">:eyes:API文档<a>
+<!-- <a href="http://super2god.coding.me/lightning-tools-wiki/#/README" target="_blank">:eyes:API文档<a> -->
 
 ### Quick start
 
