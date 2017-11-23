@@ -8,4 +8,4 @@
 
 <h2 align="center">lightning-tools：雷电鸟</h2>
 
-> :zap: 提高前端的生产率
+> :zap:slogan: 提高前端的生产率
